@@ -10,6 +10,8 @@ export default function Header() {
       className="
     flex
     flex-col
+    sticky
+    top-0
     "
     >
       <div
