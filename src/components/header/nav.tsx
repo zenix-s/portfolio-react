@@ -28,20 +28,17 @@ const Nav: React.FC<NavProps> = ({ open }) => {
   return (
     <nav
       className={`
+        transition-translate
         fixed
         left-0
         top-0
-        z-10
-        block
-        h-full
+        h-screen
         w-full
         bg-neutral-600
         p-8
         pt-20
-        ${open ? "translate-x-0" : "translate-x-full"}
-        transition-translate
         duration-300
-
+        ${open ? "translate-x-0" : "translate-x-full"}
       `}
     >
       <ul

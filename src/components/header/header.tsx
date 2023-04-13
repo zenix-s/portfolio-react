@@ -8,24 +8,25 @@ export default function Header() {
   return (
     <header
       className="
-    flex
-    flex-col
-    sticky
+      z-50
+    fixed
     top-0
+    flex
+    w-full
+    flex-col
     "
     >
       <div
         className="
-      z-20
       flex
       w-full
       items-center
-      justify-between
+      justify-end
       px-8
       py-4
       "
       >
-        <Logo active={isOpen} />
+        {/* <Logo active={isOpen} /> */}
         <HeaderButton
           icon={FiMenu}
           onClick={() => {

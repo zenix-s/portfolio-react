@@ -8,16 +8,31 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif !important;
+  /* outline: 1px solid red; */
 }
 
-.clicked span:first-child {
-  transform: rotate(45deg) translate(5px, 10px);
+.main-image-animation{
+  animation: main-image-animation 1s ease-in-out;
 }
 
-.clicked span:nth-child(2) {
-  opacity: 0;
+.main-section-animation{
+  animation: main-section-animation 2s ease-in-out;
 }
 
-.clicked span:last-child {
-  transform: rotate(-45deg) translate(5px, -10px);
+@keyframes main-image-animation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes main-section-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
