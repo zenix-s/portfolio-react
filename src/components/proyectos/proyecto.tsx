@@ -18,21 +18,23 @@ const Proyecto: React.FC<Proyecto> = ({
   return (
     <div
       // if hover, show the description
-      onMouseEnter={() => setMostrar(true)}
-      onMouseLeave={() => setMostrar(false)}
+
+      className="px-28 py-10"
     >
+      <div>
+        <h1 className="text-slate-300 text-2xl ml-4 mb-2">{nombre}</h1>
+      </div>
       <div
-        className="h-96 bg-cover bg-center text-slate-300"
+        onMouseEnter={() => setMostrar(true)}
+        onMouseLeave={() => setMostrar(false)}
+        className="h-96 rounded-3xl bg-cover bg-center p-8 text-slate-300 flex items-end hover:grayscale "
         style={{ backgroundImage: `url(${imagen})` }}
       >
-        <div>
-          <h1>{nombre}</h1>
-        </div>
         <div className="overflow-hidden">
           <div
             className={` 
           ${mostrar ? "-translate-y-0" : "translate-y-full"} 
-          transform transition-all duration-500 ease-in-out`}
+          transform transition-all duration-500 ease-in-out `}
           >
             <div className="">
               <p>{descripcion}</p>
