@@ -1,14 +1,16 @@
 import Header from "./components/header/header";
 import About from "./components/about/about";
-import Projects from "./components/projects/projects";
+import Proyectos from "./components/proyectos/proyectos";
 import UpButton from "./components/UpButton";
+import Me from "./components/me/me";
 function App() {
   return (
     <div className="App bg-slate-700">
       <Header />
       <main>
         <About />
-        <Projects />
+        <Me />
+        <Proyectos />
       </main>
       <UpButton />
     </div>

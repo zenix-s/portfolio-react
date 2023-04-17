@@ -10,6 +10,9 @@
   font-family: "Roboto", sans-serif !important;
   /* outline: 1px solid red; */
 }
+body{
+  background-color: #334155;
+}
 
 .main-image-animation{
   animation: main-image-animation 1s ease-in-out;
@@ -21,10 +24,12 @@
 
 @keyframes main-image-animation {
   0% {
-    transform: translateX(-100%);
+    /* transform: translateX(-100%); */
+    height: 0;
   }
   100% {
-    transform: translateX(0);
+    /* transform: translateX(0); */
+    height: 100%;
   }
 }
 
