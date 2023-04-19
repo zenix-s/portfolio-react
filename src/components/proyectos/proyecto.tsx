@@ -27,7 +27,7 @@ const Proyecto: React.FC<Proyecto> = ({
       <div
         onMouseEnter={() => setMostrar(true)}
         onMouseLeave={() => setMostrar(false)}
-        className="h-96 rounded-3xl bg-cover bg-center p-8 text-slate-300 flex items-end hover:grayscale "
+        className="h-96 rounded-3xl bg-cover bg-center p-8 text-slate-300 flex items-end hover:grayscale transition-all duration-500 ease-in-out "
         style={{ backgroundImage: `url(${imagen})` }}
       >
         <div className="overflow-hidden">
@@ -36,13 +36,13 @@ const Proyecto: React.FC<Proyecto> = ({
           ${mostrar ? "-translate-y-0" : "translate-y-full"} 
           transform transition-all duration-500 ease-in-out `}
           >
-            <div className="">
+            <div className="text-xl mb-4">
               <p>{descripcion}</p>
             </div>
             <div className="flex">
               {tecnologias?.map((tecnologia, index) => {
                 const Tecnologia = tecnologia;
-                return <Tecnologia key={index} />;
+                return <Tecnologia key={index} height={50} width={50} />;
               })}
             </div>
           </div>
