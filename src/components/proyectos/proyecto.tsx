@@ -42,7 +42,7 @@ const Proyecto: React.FC<Proyecto> = ({
             <div className="flex">
               {tecnologias?.map((tecnologia, index) => {
                 const Tecnologia = tecnologia;
-                return <Tecnologia key={index} height={50} width={50} />;
+                return <Tecnologia key={index}  />;
               })}
             </div>
           </div>
