@@ -19,7 +19,7 @@ const Proyecto: React.FC<Proyecto> = ({
     <div
       // if hover, show the description
 
-      className="px-28 py-10"
+      className="sm:px-8 md:px-28 py-10"
     >
       <div>
         <h1 className="text-slate-300 text-2xl ml-4 mb-2">{nombre}</h1>
@@ -27,7 +27,7 @@ const Proyecto: React.FC<Proyecto> = ({
       <div
         onMouseEnter={() => setMostrar(true)}
         onMouseLeave={() => setMostrar(false)}
-        className="h-96 rounded-3xl bg-cover bg-center p-8 text-slate-300 flex items-end hover:grayscale transition-all duration-500 ease-in-out "
+        className="h-96 sm:rounded-3xl bg-cover bg-center p-8 text-slate-300 flex items-end hover:grayscale transition-all duration-500 ease-in-out "
         style={{ backgroundImage: `url(${imagen})` }}
       >
         <div className="overflow-hidden">

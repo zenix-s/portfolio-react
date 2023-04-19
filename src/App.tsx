@@ -3,6 +3,7 @@ import About from "./components/about/about";
 import Proyectos from "./components/proyectos/proyectos";
 import UpButton from "./components/UpButton";
 import Me from "./components/me/me";
+import Footer from "./components/footer/footer";
 function App() {
   return (
     <div className="App bg-slate-700">
@@ -12,6 +13,7 @@ function App() {
         <Me />
         <Proyectos />
       </main>
+      <Footer />
       <UpButton />
     </div>
   );
