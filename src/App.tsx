@@ -11,7 +11,6 @@ function App() {
         <About />
       </main>
       <Footer />
-      <UpButton />
     </div>
   );
 }
