@@ -34,7 +34,7 @@ const Proyecto: React.FC<Proyecto> = ({
     <a
       href={href}
       target="_blank"
-      className="code-section transition-all duration-500 hover:ml-2"
+      className="code-section transition-all duration-500 before:bg-slate-400 hover:before:bg-white "
     >
       <div>
         <div>
@@ -47,7 +47,7 @@ const Proyecto: React.FC<Proyecto> = ({
             <div>
               <span className="text-sky-300">tecnologias:</span>
               <span className="text-blue-400">{" ["}</span>
-              <div className="pl-6 flex flex-col">
+              <div className="flex flex-col pl-6">
                 {tecnologias?.map((tecnologia, index) => {
                   return (
                     <span key={index}>
@@ -73,7 +73,7 @@ const Proyecto: React.FC<Proyecto> = ({
 
 const MeProyectos = () => {
   return (
-    <div className="flex w-full md:w-1/2 grow items-center justify-start overflow-y-hidden bg-slate-800/60 p-8">
+    <div className="flex w-full grow items-center justify-start overflow-y-hidden bg-slate-800/60 p-8 md:w-1/2">
       <div className="code-section text-xl text-neutral-200">
         <div>
           <p>
