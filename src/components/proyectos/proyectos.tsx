@@ -12,7 +12,8 @@ const ListaProyectos = [
       DiJavascript1,
       SiNextdotjs,
       SiPrisma,
-    ]
+    ],
+    href: "#",
   },
   {
     nombre: "Proyecto 2",
@@ -22,7 +23,8 @@ const ListaProyectos = [
       DiReact,
       SiTailwindcss,
       DiPhp
-    ]
+    ],
+    href: "#",
   },
   {
     nombre: "Proyecto 3",
@@ -32,13 +34,16 @@ const ListaProyectos = [
       DiReact,
       SiTailwindcss,
       DiJavascript1,
-    ]
+    ],
+    href: "#",
   },
 ];
 
 const Proyectos = () => {
   return (
-    <div>
+    <div className="
+    grid grid-cols-1 xl:grid-cols-2 gap-8 mt-10 p-4
+    ">
       {ListaProyectos.map((proyecto, index) => {
         return (
           <Proyecto
@@ -47,6 +52,7 @@ const Proyectos = () => {
             descripcion={proyecto.descripcion}
             imagen={proyecto.imagen}
             tecnologias={proyecto.tecnologias}
+            href={proyecto.href}
           />
         );
       })}

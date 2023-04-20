@@ -6,6 +6,7 @@ interface Proyecto {
   descripcion: string;
   imagen: string;
   tecnologias?: IconType[];
+  href?: string;
 }
 
 const Proyecto: React.FC<Proyecto> = ({
@@ -13,41 +14,35 @@ const Proyecto: React.FC<Proyecto> = ({
   descripcion,
   imagen,
   tecnologias,
+  href,
 }) => {
-  const [mostrar, setMostrar] = useState(false);
   return (
-    <div
-      // if hover, show the description
-
-      className="sm:px-8 md:px-28 py-10"
-    >
-      <div>
-        <h1 className="text-slate-300 text-2xl ml-4 mb-2">{nombre}</h1>
-      </div>
-      <div
-        onMouseEnter={() => setMostrar(true)}
-        onMouseLeave={() => setMostrar(false)}
-        className="h-96 sm:rounded-3xl bg-cover bg-center p-8 text-slate-300 flex items-end hover:grayscale transition-all duration-500 ease-in-out "
+    <div className="">
+      <a
+        className="flex h-96 items-end bg-cover bg-center text-slate-300 transition-all duration-500 ease-in-out hover:grayscale sm:rounded-3xl overflow-hidden"
         style={{ backgroundImage: `url(${imagen})` }}
+        href={href}
+        target="_blank"
       >
-        <div className="overflow-hidden">
-          <div
-            className={` 
-          ${mostrar ? "-translate-y-0" : "translate-y-full"} 
-          transform transition-all duration-500 ease-in-out `}
-          >
-            <div className="text-xl mb-4">
+        <div className="overflow-hidden w-full">
+          <div className="backdrop-blur-md text-slate-900 p-8 w-full">
+            <div>
+              <h1 className="mb-2 text-3xl">{nombre}</h1>
+            </div>
+            <div className="mb-4 text-2xl">
               <p>{descripcion}</p>
             </div>
-            <div className="flex">
+            <div className="flex w-full justify-between">
               {tecnologias?.map((tecnologia, index) => {
                 const Tecnologia = tecnologia;
-                return <Tecnologia key={index}  />;
+                return <Tecnologia key={index} 
+                className="text-4xl"
+                />;
               })}
             </div>
           </div>
         </div>
-      </div>
+      </a>
     </div>
   );
 };
