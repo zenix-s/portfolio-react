@@ -9,7 +9,6 @@ function App() {
       <Header />
       <main>
         <About />
-        <Proyectos />
       </main>
       <Footer />
       <UpButton />

@@ -9,6 +9,20 @@ interface Proyecto {
   href?: string;
 }
 
+interface ProyectoSubString {
+  label1: string;
+  label2: string;
+}
+
+const ProyectoSubString: React.FC<ProyectoSubString> = ({ label1, label2 }) => {
+  return (
+    <div>
+      <span className="text-sky-300">{label1}:</span>{" "}
+      <span className="text-orange-400">"{label2}"</span>,
+    </div>
+  );
+};
+
 const Proyecto: React.FC<Proyecto> = ({
   nombre,
   descripcion,
@@ -23,41 +37,35 @@ const Proyecto: React.FC<Proyecto> = ({
       className="code-section transition-all duration-500 hover:ml-2"
     >
       <div>
-        <p>
+        <div>
           <span className="text-fuchsia-500">{"{"}</span>
-        </p>
+        </div>
         <div className="pl-6">
-          <p>
-            <span className="text-sky-300">nombre:</span>{" "}
-            <span className="text-orange-400">"{nombre}"</span>,
-          </p>
-          <p>
-            <span className="text-sky-300">descripcion:</span>{" "}
-            <span className="text-orange-400">"{descripcion}"</span>,
-          </p>
+          <ProyectoSubString label1="nombre" label2={nombre} />
+          <ProyectoSubString label1="descripcion" label2={descripcion} />
           <div className="code-section">
-            <p>
+            <div>
               <span className="text-sky-300">tecnologias:</span>
               <span className="text-blue-400">{" ["}</span>
               <div className="pl-6">
                 {tecnologias?.map((tecnologia, index) => {
                   return (
-                    <p key={index}>
+                    <span key={index}>
                       <span className="text-orange-400">"{tecnologia}"</span>
                       {index !== tecnologias.length - 1 ? "," : ""}
-                    </p>
+                    </span>
                   );
                 })}
               </div>
               <span className="text-blue-400">{"]"}</span>
-            </p>
+            </div>
           </div>
         </div>
 
-        <p>
+        <div>
           <span className="text-fuchsia-500">{"}"}</span>
           <span>,</span>
-        </p>
+        </div>
       </div>
     </a>
   );
