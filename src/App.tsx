@@ -1,5 +1,5 @@
 import Header from "./components/header/header";
-import About from "./components/about/about";
+import About from "./components/me/me";
 import Proyectos from "./components/proyectos/proyectos";
 import UpButton from "./components/UpButton";
 import Me from "./components/me/me";
