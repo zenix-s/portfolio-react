@@ -14,7 +14,7 @@ const ListaProyectos = [
       SiNextdotjs,
       SiPrisma,
     ],
-    href: "#",
+    href: "https://github.com/zenix-s/varbas-app",
     tecnologiasNombres: [
       "React",
       "Tailwindcss",
