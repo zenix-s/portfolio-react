@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section className="flex min-h-screen w-full flex-col-reverse items-stretch justify-center md:flex-row">
       <MeProyectos />
-      <div className="main-section-animation flex w-full grow flex-col items-start justify-around p-4 md:w-1/2 md:items-start md:justify-center">
+      <div className="main-section-animation min-h-screen flex w-full grow flex-col items-start justify-center gap-8 p-4 md:w-1/2 md:items-start md:justify-center">
         <h1 className="flex flex-col items-start gap-1 text-6xl uppercase text-slate-200 sm:text-6xl md:flex-col md:gap-4 xl:text-8xl 2xl:text-9xl">
           <span>Sergio</span>
           <span>Fernández</span>

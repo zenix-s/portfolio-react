@@ -47,7 +47,7 @@ const Proyecto: React.FC<Proyecto> = ({
             <div>
               <span className="text-sky-300">tecnologias:</span>
               <span className="text-blue-400">{" ["}</span>
-              <div className="pl-6">
+              <div className="pl-6 flex flex-col">
                 {tecnologias?.map((tecnologia, index) => {
                   return (
                     <span key={index}>
@@ -73,7 +73,7 @@ const Proyecto: React.FC<Proyecto> = ({
 
 const MeProyectos = () => {
   return (
-    <div className="flex w-1/2 grow items-center justify-start overflow-y-hidden bg-slate-800/60 p-8">
+    <div className="flex w-full md:w-1/2 grow items-center justify-start overflow-y-hidden bg-slate-800/60 p-8">
       <div className="code-section text-xl text-neutral-200">
         <div>
           <p>
