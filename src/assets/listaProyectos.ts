@@ -4,7 +4,8 @@ import {SiTailwindcss, SiPrisma, SiNextdotjs} from "react-icons/si";
 const ListaProyectos = [
   {
     nombre: "Varbas",
-    descripcion: "Descripcion del proyecto 1",
+    // descripcion de un proyecto parecido a trello
+    descripcion: "Proyecto pensado para la gestión de proyectos, tareas y usuarios.",
     imagen: "https://picsum.photos/1920/1080",
     tecnologias: [
       DiReact,
@@ -14,6 +15,12 @@ const ListaProyectos = [
       SiPrisma,
     ],
     href: "#",
+    tecnologiasNombres: [
+      "React",
+      "Tailwindcss",
+      "Typescript",
+      "Nextjs",
+    ],
   },
   {
     nombre: "Proyecto 2",
@@ -25,6 +32,11 @@ const ListaProyectos = [
       DiPhp
     ],
     href: "#",
+    tecnologiasNombres: [
+      "React",
+      "Tailwindcss",
+      "PHP",
+    ],
   },
   {
     nombre: "Proyecto 3",
@@ -36,6 +48,11 @@ const ListaProyectos = [
       DiJavascript1,
     ],
     href: "#",
+    tecnologiasNombres: [
+      "React",
+      "Tailwindcss",
+      "Javascript",
+    ],
   },
 ];
 
