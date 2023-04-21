@@ -16,6 +16,16 @@ const Proyecto: React.FC<Proyecto> = ({
   tecnologias,
   href,
 }) => {
+  const RenderTecnologias = () => {
+    return (
+      <div className="flex w-full justify-around text-4xl">
+        {tecnologias?.map((tecnologia, index) => {
+          const Tecnologia = tecnologia;
+          return <Tecnologia key={index} />;
+        })}
+      </div>
+    );
+  };
   return (
     <div className="py-10 sm:px-8 md:px-28">
       <a
@@ -32,12 +42,7 @@ const Proyecto: React.FC<Proyecto> = ({
             <div className="mb-4 text-2xl">
               <p>{descripcion}</p>
             </div>
-            <div className="flex w-full justify-around text-4xl">
-              {tecnologias?.map((tecnologia, index) => {
-                const Tecnologia = tecnologia;
-                return <Tecnologia key={index} />;
-              })}
-            </div>
+            <RenderTecnologias />
           </div>
         </div>
       </a>
