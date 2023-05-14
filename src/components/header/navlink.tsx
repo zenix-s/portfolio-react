@@ -6,7 +6,7 @@ interface NavLinkProps {
 const NavLink = ({ to, label }: NavLinkProps) => {
   return (
     <a href={to} className="
-    text-white
+    text-invalid
     font-bold
     text-5xl
     tracking-wide

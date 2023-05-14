@@ -31,7 +31,7 @@ const HeaderButton: React.FC<HeaderButtonProps> = ({
           duration-300 
           ease-in-out
           ${active ? "rotate-45" : ""}
-          ${active ? "bg-white" : "bg-gray-400"}
+          ${active ? "bg-invalid" : "bg-lightWhite"}
           ${active ? "translate-y-4" : ""}
         `}
         ></span>
@@ -39,7 +39,7 @@ const HeaderButton: React.FC<HeaderButtonProps> = ({
           className={`
           h-1
         rounded-full
-        bg-gray-400
+        bg-lightWhite
         transition-all 
         duration-300 
         ease-in-out
@@ -56,7 +56,7 @@ const HeaderButton: React.FC<HeaderButtonProps> = ({
         ease-in-out
         ${active ? "w-full" : "w-1/3"}
         ${active ? "-rotate-45" : ""}
-        ${active ? "bg-white" : "bg-gray-400"}
+        ${active ? "bg-invalid" : "bg-lightWhite"}
         ${active ? "-translate-y-4" : ""}
         `}
         ></span>

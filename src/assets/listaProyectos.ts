@@ -54,6 +54,22 @@ const ListaProyectos = [
       "Javascript",
     ],
   },
+  {
+    nombre: "Proyecto 3",
+    descripcion: "Descripcion del proyecto 3",
+    imagen: "https://picsum.photos/1920/1080",
+    tecnologias: [
+      DiReact,
+      SiTailwindcss,
+      DiJavascript1,
+    ],
+    href: "#",
+    tecnologiasNombres: [
+      "React",
+      "Tailwindcss",
+      "Javascript",
+    ],
+  }
 ];
 
 export default ListaProyectos;

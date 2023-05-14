@@ -9,11 +9,11 @@ export default function Header() {
     <header
       className="
       z-50
-    fixed
-    top-0
-    flex
-    w-full
-    flex-col
+      absolute
+      top-0
+      right-0
+      flex
+      flex-col
     "
     >
       <div

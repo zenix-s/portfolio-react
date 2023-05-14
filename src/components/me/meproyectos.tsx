@@ -17,8 +17,9 @@ interface ProyectoSubString {
 const ProyectoSubString: React.FC<ProyectoSubString> = ({ label1, label2 }) => {
   return (
     <div>
-      <span className="text-sky-300">{label1}:</span>{" "}
-      <span className="text-orange-400">"{label2}"</span>,
+      <span className="text-error">{label1}:</span>{" "}
+      <span className="text-green
+      ">"{label2}"</span>,
     </div>
   );
 };
@@ -34,36 +35,36 @@ const Proyecto: React.FC<Proyecto> = ({
     <a
       href={href}
       target="_blank"
-      className="code-section transition-all duration-500 before:bg-slate-400 hover:before:bg-white "
+      className="code-section transition-all duration-500 before:bg-lightWhite hover:before:bg-invalid "
     >
       <div>
         <div>
-          <span className="text-fuchsia-500">{"{"}</span>
+          <span className="text-purple">{"{"}</span>
         </div>
         <div className="pl-6">
           <ProyectoSubString label1="nombre" label2={nombre} />
           <ProyectoSubString label1="descripcion" label2={descripcion} />
           <div className="code-section">
             <div>
-              <span className="text-sky-300">tecnologias:</span>
-              <span className="text-blue-400">{" ["}</span>
+              <span className="text-error">tecnologias:</span>
+              <span className="text-fountainblue">{" ["}</span>
               <div className="flex flex-col pl-6">
                 {tecnologias?.map((tecnologia, index) => {
                   return (
                     <span key={index}>
-                      <span className="text-orange-400">"{tecnologia}"</span>
+                      <span className="text-malibu">"{tecnologia}"</span>
                       {index !== tecnologias.length - 1 ? "," : ""}
                     </span>
                   );
                 })}
               </div>
-              <span className="text-blue-400">{"]"}</span>
+              <span className="text-fountainblue">{"]"}</span>
             </div>
           </div>
         </div>
 
         <div>
-          <span className="text-fuchsia-500">{"}"}</span>
+          <span className="text-purple">{"}"}</span>
           <span>,</span>
         </div>
       </div>
@@ -73,12 +74,14 @@ const Proyecto: React.FC<Proyecto> = ({
 
 const MeProyectos = () => {
   return (
-    <div className="flex w-full grow items-center justify-start overflow-y-hidden bg-slate-800/60 p-8 md:w-1/2">
-      <div className="code-section text-xl text-neutral-200">
+    <div className="flex h-auto w-full grow items-center justify-start p-8 text-lightWhite">
+      <div className="code-section text-xl">
         <div>
           <p>
-            <span className="text-sky-300">const MisProyectos</span> ={" "}
-            <span className="text-yellow-300">{"["}</span>
+            <span className="text-purple">const </span>
+            <span className="text-chalky">MisProyectos</span>
+            <span className="text-fountainblue">=</span>
+            <span className="text-whiskey">{"["}</span>
           </p>
           <div className="flex flex-col pl-6">
             {ListaProyectos.map((proyecto, index) => {
@@ -95,7 +98,7 @@ const MeProyectos = () => {
             })}
           </div>
           <p>
-            <span className="text-yellow-300">{"]"}</span>
+            <span className="text-whiskey">{"]"}</span>
             <span>;</span>
           </p>
         </div>

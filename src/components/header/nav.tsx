@@ -34,7 +34,7 @@ const Nav: React.FC<NavProps> = ({ open }) => {
         top-0
         h-screen
         w-full
-        bg-neutral-600
+        bg-dark
         p-8
         pt-20
         duration-300
