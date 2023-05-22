@@ -8,32 +8,6 @@ const About = () => {
 
   return (
     <section className="flex h-full w-full flex-col-reverse items-stretch justify-center overflow-hidden md:flex-row">
-      <div className="w-1/2 flex flex-col">
-        <div className="tabs">
-          <button
-            className={`tab-lifted tab tab-lg !bg-transparent ${
-              section === "proyectos" ? "tab-active" : ""
-            }`}
-            onClick={() => setSection("proyectos")}
-          >
-            <span>proyectos</span>
-          </button>
-          <button
-            className={`tab-lifted tab tab-lg !bg-transparent ${
-              section === "contacto" ? "tab-active" : ""
-            }`}
-            onClick={() => setSection("contacto")}
-          >
-            <span>contacto</span>
-          </button>
-        </div>
-        <div className="relative  flex-grow w-full">
-          <div className="absolute inset-0 overflow-scroll">
-            {section === "proyectos" ? <MeProyectos /> : ""}
-            {section === "contacto" ? <div>contacto</div> : ""}
-          </div>
-        </div>
-      </div>
       <div className="main-section-animation flex h-full w-full grow flex-col items-start justify-center gap-8 p-4 md:w-1/2 md:items-start md:justify-center">
         <h1 className="flex flex-col items-start gap-1 text-6xl uppercase text-invalid sm:text-6xl md:flex-col md:gap-4 xl:text-8xl 2xl:text-9xl">
           <span>Sergio</span>

@@ -1,26 +1,23 @@
-interface LogoProps {
-  active: boolean;
-}
+import icon from "../../assets/icon.svg";
 
-const Logo: React.FC<LogoProps> = ({ active }) => {
+const Logo = () => {
   return (
     <div
       className="
-
+      z-50
     "
     >
       <h1
         className={`
+        duration-400
         text-3xl
         font-bold
-        ${active ? "text-neutral-200" : "text-neutral-900"}
+        text-neutral-200
         transition-colors
-        duration-400
         ease-in
-
         `}
       >
-        Sergio Fernández
+        <img src={icon} alt="logo" className="h-12 w-12" />
       </h1>
     </div>
   );
