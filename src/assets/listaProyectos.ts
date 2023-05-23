@@ -4,8 +4,7 @@ import {SiTailwindcss, SiPrisma, SiNextdotjs} from "react-icons/si";
 const ListaProyectos = [
   {
     nombre: "Varbas",
-    // descripcion de un proyecto parecido a trello
-    descripcion: "Proyecto pensado para la gestión de proyectos, tareas y usuarios.",
+    descripcion: "Varbas es una plataforma colaborativa de gestión de proyectos diseñada para equipos de trabajo. Con Varbas, los equipos pueden organizar tareas, asignar responsabilidades, realizar seguimiento del progreso y mantener una comunicación efectiva.",
     imagen: "https://picsum.photos/1920/1080",
     tecnologias: [
       DiReact,
@@ -54,22 +53,6 @@ const ListaProyectos = [
       "Javascript",
     ],
   },
-  {
-    nombre: "Proyecto 3",
-    descripcion: "Descripcion del proyecto 3",
-    imagen: "https://picsum.photos/1920/1080",
-    tecnologias: [
-      DiReact,
-      SiTailwindcss,
-      DiJavascript1,
-    ],
-    href: "#",
-    tecnologiasNombres: [
-      "React",
-      "Tailwindcss",
-      "Javascript",
-    ],
-  }
 ];
 
 export default ListaProyectos;

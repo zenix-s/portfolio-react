@@ -5,12 +5,13 @@ import { CiTwitter, CiFacebook } from "react-icons/ci";
 import Proyectos from "./components/proyectos/Proyectos";
 function App() {
   return (
-    <div className="relative flex h-screen w-screen bg-deepdark px-16 py-8">
+    <div className="w-screen overflow-x-hidden bg-deepdark">
       <Header />
-      <main className="w-full h-full min-h-screen">
+      <main className="mt-[75px] h-full min-h-screen w-full">
         <About />
         <Proyectos />
       </main>
+      <Footer />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import icon from "../../assets/icon.svg";
+import logo from "../../assets/logonobg.svg";
 
 const Logo = () => {
   return (
@@ -17,7 +17,7 @@ const Logo = () => {
         ease-in
         `}
       >
-        <img src={icon} alt="logo" className="h-12 w-12" />
+        <img src={logo} alt="logo" className="h-12 w-12" />
       </h1>
     </div>
   );
