@@ -13,6 +13,17 @@ const IdividualProject: React.FC<Props> = ({ project }) => {
           <h1 className="text-4xl font-bold">{project.nombre}</h1>
           <p>{project.descripcion}</p>
           <div>
+            <h2 className="text-2xl font-bold">Tecnologías</h2>
+            <ul className="list-disc list-inside grid grid-rows-2 grid-flow-col">
+              {project.tecnologias.map((tecnologia) => (
+                <li key={tecnologia.nombre} className="flex items-center gap-2">
+                  {tecnologia.icono && <tecnologia.icono />}
+                  {tecnologia.nombre}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
             <a href={project.href} className="btn-primary btn gap-2" target="_blank" rel="noreferrer">
               Visitar Proyecto <FiExternalLink />
             </a>
