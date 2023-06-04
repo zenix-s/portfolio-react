@@ -1,5 +1,4 @@
 import { useState } from "react";
-import MeProyectos from "./meproyectos";
 
 type section = "proyectos" | "contacto";
 
