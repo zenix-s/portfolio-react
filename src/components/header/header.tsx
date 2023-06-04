@@ -15,6 +15,7 @@ export default function Header() {
       flex
       w-full
       flex-col
+      bg-deepdark
       backdrop-filter
       backdrop-blur
     "

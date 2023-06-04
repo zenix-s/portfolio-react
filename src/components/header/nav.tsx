@@ -12,15 +12,7 @@ const navLinks = [
   },
   {
     to: "#",
-    label: "Me",
-  },
-  {
-    to: "#",
     label: "Proyectos",
-  },
-  {
-    to: "#",
-    label: "Contacto",
   },
 ];
 

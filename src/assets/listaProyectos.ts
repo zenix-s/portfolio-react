@@ -6,7 +6,7 @@ const ListaProyectos = [
     nombre: "Varbas - Una herramienta de gestión de proyectos colaborativa",
     descripcion:
       "Varbas es una plataforma colaborativa de gestión de proyectos diseñada para equipos de trabajo. Con Varbas, los equipos pueden organizar tareas, asignar responsabilidades, realizar seguimiento del progreso y mantener una comunicación efectiva.",
-    imagen: "../../assets/img/p1.webp",
+    imagen: "/src/assets/img/p1.webp",
     href: "https://github.com/zenix-s/varbas-app",
     tecnologias: [
       {
@@ -34,7 +34,7 @@ const ListaProyectos = [
   {
     nombre: "Crud de una tienda de libros",
     descripcion: "Crud de una tienda de libros con Java y Hibernate ORM",
-    imagen: "https://picsum.photos/1920/1080",
+    imagen: "/src/assets/img/p2.webp",
     href: "#",
     tecnologias: [
       { 
@@ -46,26 +46,6 @@ const ListaProyectos = [
         icono: SiHibernate,
       },
       
-    ],
-  },
-  {
-    nombre: "Proyecto 3",
-    descripcion: "Descripcion del proyecto 3",
-    imagen: "https://picsum.photos/1920/1080",
-    href: "#",
-    tecnologias: [
-      {
-        nombre: "React",
-        icono: DiReact,
-      },
-      {
-        nombre: "Tailwindcss",
-        icono: SiTailwindcss,
-      },
-      {
-        nombre: "Javascript",
-        icono: DiJavascript1,
-      },
     ],
   },
 ];
