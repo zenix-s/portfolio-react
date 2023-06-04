@@ -6,7 +6,7 @@ const ListaProyectos = [
     nombre: "Varbas - Una herramienta de gestión de proyectos colaborativa",
     descripcion:
       "Varbas es una plataforma colaborativa de gestión de proyectos diseñada para equipos de trabajo. Con Varbas, los equipos pueden organizar tareas, asignar responsabilidades, realizar seguimiento del progreso y mantener una comunicación efectiva.",
-    imagen: "https://picsum.photos/1920/1080",
+    imagen: "../../assets/img/p1.webp",
     href: "https://github.com/zenix-s/varbas-app",
     tecnologias: [
       {

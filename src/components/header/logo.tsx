@@ -7,7 +7,7 @@ const Logo = () => {
       z-50
     "
     >
-      <h1
+      <a
         className={`
         duration-400
         text-3xl
@@ -15,10 +15,14 @@ const Logo = () => {
         text-neutral-200
         transition-colors
         ease-in
+        tooltip
+        tooltip-bottom
         `}
+        data-tip="Inicio"
+        href="#home"
       >
         <img src={logo} alt="logo" className="h-12 w-12" />
-      </h1>
+      </a>
     </div>
   );
 };

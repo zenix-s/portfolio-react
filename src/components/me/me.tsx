@@ -7,7 +7,7 @@ const About = () => {
   const [section, setSection] = useState<section>("proyectos");
 
   return (
-    <section className="flex min-h-screen w-full justify-center overflow-hidden">
+    <section className="flex min-h-screen w-full justify-center items-center overflow-hidden">
       <div className="main-section-animation flex h-full w-full flex-col items-start justify-center gap-8 p-1 md:p-4">
         <h1 className="flex flex-col items-start gap-1 text-6xl uppercase text-invalid sm:text-6xl md:flex-col md:gap-4 xl:text-8xl 2xl:text-9xl">
           <span>Sergio</span>

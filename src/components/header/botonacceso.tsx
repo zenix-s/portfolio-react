@@ -17,9 +17,10 @@ const HeaderButton: React.FC<HeaderButtonProps> = ({
   return (
     <div className="z-20">
       <button
-        className={`flex h-12 w-12 flex-col items-end justify-around
+        className={`flex h-12 w-12 flex-col items-end justify-around tooltip tooltip-bottom
       ${active ? "clicked" : ""}
       `}
+        data-tip="Menu"
         onClick={onClick}
       >
         <span

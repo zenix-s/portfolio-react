@@ -1,5 +1,6 @@
 import IdividualProject from "./IndividualProject";
 import ListaProyectos from "../../assets/listaProyectos";
+import p1 from "../../assets/proyectos/p1.png";
 
 const Proyectos = () => {
   return (

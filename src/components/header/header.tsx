@@ -3,6 +3,7 @@ import Nav from "./nav";
 import { FiMenu } from "react-icons/fi";
 import HeaderButton from "./botonacceso";
 import { useState } from "react";
+import Social from "./social";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -29,6 +30,9 @@ export default function Header() {
       "
       >
         <Logo />
+        <div className="hidden lg:block">
+          <Social />
+        </div>
         <HeaderButton
           icon={FiMenu}
           onClick={() => {
