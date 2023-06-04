@@ -6,11 +6,15 @@ import p3 from "../../assets/img/p1.webp";
 
 interface Props {
   project: ProjectProps;
+  reverse?: boolean;
 }
 
-const IdividualProject: React.FC<Props> = ({ project }) => {
+const IdividualProject: React.FC<Props> = ({ project, reverse }) => {
   return (
-    <div className="flex min-h-[500px] w-full flex-col-reverse overflow-hidden bg-invalid text-deepdark md:flex-row">
+    <div className={`flex min-h-[500px] max-w-[1500px] w-full flex-col-reverse overflow-hidden text-invalid
+      ${reverse ? "md:flex-row-reverse" : "md:flex-row"}
+    
+    `}>
       <div className="flex w-full items-center p-12 md:p-4">
         <div className="flex flex-col gap-4">
           <h1 className="text-4xl font-bold">{project.nombre}</h1>
@@ -38,9 +42,9 @@ const IdividualProject: React.FC<Props> = ({ project }) => {
           </div>
         </div>
       </div>
-      {/* <div className="w-full">
-        <img className="h-full object-cover" src={project.imagen} alt={project.nombre} />
-      </div> */}
+      <div className="w-full">
+        <img className="h-full object-contain" src={project.imagen} alt={project.nombre} />
+      </div>
     </div>
   );
 };

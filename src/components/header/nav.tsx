@@ -1,5 +1,6 @@
 import React from "react";
 import NavLink from "./navlink";
+import Social from "./social";
 
 interface NavProps {
   open: boolean;
@@ -45,6 +46,9 @@ const Nav: React.FC<NavProps> = ({ open }) => {
             <NavLink to={link.to} label={link.label} />
           </li>
         ))}
+        <li>
+          <Social />
+        </li>
       </ul>
     </nav>
   );
