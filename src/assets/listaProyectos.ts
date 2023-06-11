@@ -35,7 +35,7 @@ const ListaProyectos = [
     nombre: "Crud de una tienda de libros",
     descripcion: "Crud de una tienda de libros con Java y Hibernate ORM",
     imagen: "/assets/img/p2.png",
-    href: "#",
+    href: "https://github.com/zenix-s/Crud-Libreria",
     tecnologias: [
       { 
         nombre: "Java",

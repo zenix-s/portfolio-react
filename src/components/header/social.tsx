@@ -1,5 +1,6 @@
 import { DiGit, DiGithub } from "react-icons/di"
 import { FiGithub, FiLinkedin, FiPaperclip } from "react-icons/fi"
+import CVSergio from "../../assets/CVSergio.pdf"
 
 
 const Social = () => {
@@ -12,12 +13,25 @@ const Social = () => {
       <a href="https://www.linkedin.com/in/sergio-fernandez-fernandez-setfernet/" className="tooltip tooltip-bottom" data-tip="Linkedin" target="_blank">
         <FiLinkedin />
       </a>
-      <a href="#" className="flex items-center tooltip tooltip-bottom" data-tip="Curriculum Vitae" target="_blank">
+      <a href={
+        CVSergio
+      } className="flex items-center tooltip tooltip-bottom" data-tip="Curriculum Vitae" target="_blank">
         <FiPaperclip /> <span>Curriculum</span>
       </a>
     </div>
   )
 
 }
+
+// escribeme una arrow function que retorne un div con un h1 que diga hola mundo
+
+const Social2 = () => {
+  return (
+    <div>
+      <h1>Hola mundo</h1>
+    </div>
+  )
+}
+
 
 export default Social

@@ -16,8 +16,7 @@ export default function Header() {
       w-full
       flex-col
       bg-deepdark
-      backdrop-filter
-      backdrop-blur
+      !bg-transparent
     "
     >
       <div

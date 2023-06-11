@@ -5,9 +5,9 @@ import { CiTwitter, CiFacebook } from "react-icons/ci";
 import Proyectos from "./components/proyectos/Proyectos";
 function App() {
   return (
-    <div className="w-screen overflow-x-hidden bg-deepdark">
+    <div className="w-screen overflow-x-hidden">
       <Header />
-      <main className="mt-[75px] h-full min-h-screen w-full">
+      <main className="h-full min-h-screen w-full">
         <About />
         <Proyectos />
       </main>
