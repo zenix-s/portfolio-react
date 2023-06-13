@@ -6,18 +6,37 @@ import { useState } from "react";
 import Social from "./social";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // when i scroll down the header shouldent be transparent
+
+  function scrollFunction() {
+    if ( document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      setIsScrolled(true);
+    }
+    else {
+      setIsScrolled(false);
+    }
+  }
+  
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
   return (
     <header
-      className="
+      className={`
       fixed
       top-0
       z-50
       flex
       w-full
       flex-col
-      bg-deepdark
-      !bg-transparent
-    "
+      ${isScrolled ? "bg-bgsection" : "bg-transparent"}
+      transition-all
+      duration-350
+    `}
     >
       <div
         className="
