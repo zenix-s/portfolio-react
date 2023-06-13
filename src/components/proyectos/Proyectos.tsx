@@ -3,7 +3,9 @@ import ListaProyectos from "../../assets/listaProyectos";
 
 const Proyectos = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center gap-8 p-2 md:p-8 lg:p-16">
+    <div 
+      id="proyectos"
+    className="flex min-h-screen flex-col items-center gap-8 p-2 md:p-8 lg:p-16">
       {ListaProyectos.map((project, index) => {
         return (
           <IdividualProject

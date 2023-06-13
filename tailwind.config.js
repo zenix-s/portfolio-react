@@ -19,6 +19,7 @@ export default {
       whiskey: "#d19a66",
       deepred: "#be5046",
       bgsection: "#2a303c",
+      yellow: "#FFD369",
     },
   },
 

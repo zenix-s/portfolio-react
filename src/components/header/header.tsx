@@ -19,6 +19,10 @@ export default function Header() {
       setIsScrolled(false);
     }
   }
+
+  const onToggleOpen = () => {
+    setIsOpen(!isOpen);
+  };
   
   window.onscroll = function () {
     scrollFunction();
@@ -33,7 +37,7 @@ export default function Header() {
       flex
       w-full
       flex-col
-      ${isScrolled ? "bg-bgsection" : "bg-transparent"}
+      bg-bgsection
       transition-all
       duration-350
     `}
@@ -60,7 +64,7 @@ export default function Header() {
           active={isOpen}
         />
       </div>
-      <Nav open={isOpen} />
+      <Nav open={isOpen} toggleOpen={onToggleOpen} />
     </header>
   );
 }

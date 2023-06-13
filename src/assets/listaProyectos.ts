@@ -6,7 +6,7 @@ const ListaProyectos = [
     nombre: "Varbas - Una herramienta de gestión de proyectos colaborativa",
     descripcion:
       "Varbas es una plataforma colaborativa de gestión de proyectos diseñada para equipos de trabajo. Con Varbas, los equipos pueden organizar tareas, asignar responsabilidades, realizar seguimiento del progreso y mantener una comunicación efectiva.",
-    imagen: "/assets/img/p1.png",
+    imagen: "1",
     href: "https://github.com/zenix-s/varbas-app",
     tecnologias: [
       {
@@ -34,7 +34,7 @@ const ListaProyectos = [
   {
     nombre: "Crud de una tienda de libros",
     descripcion: "Crud de una tienda de libros con Java y Hibernate ORM",
-    imagen: "/assets/img/p2.png",
+    imagen: "2",
     href: "https://github.com/zenix-s/Crud-Libreria",
     tecnologias: [
       { 

@@ -1,11 +1,20 @@
 interface NavLinkProps {
   to: string;
   label: string;
+  toggleOpen: () => void;
 }
 
-const NavLink = ({ to, label }: NavLinkProps) => {
+const NavLink = ({ to, label, toggleOpen }: NavLinkProps) => {
+
+  const onClick = () => {
+    toggleOpen();
+  };
+
   return (
-    <a href={to} className="
+    <a 
+    href={to} 
+    onClick={onClick}
+    className="
     text-invalid
     font-bold
     text-5xl

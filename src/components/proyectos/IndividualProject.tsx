@@ -1,8 +1,7 @@
 import { ProjectProps } from "../../types";
 import { FiExternalLink } from "react-icons/fi";
-import p1 from "../../assets/img/p1.webp";
-import p2 from "../../assets/img/p1.webp";
-import p3 from "../../assets/img/p1.webp";
+import p1 from "../../assets/img/p1.png";
+import p2 from "../../assets/img/p2.png";
 
 interface Props {
   project: ProjectProps;
@@ -43,7 +42,12 @@ const IdividualProject: React.FC<Props> = ({ project, reverse }) => {
         </div>
       </div>
       <div className="w-full">
-        <img className="h-full object-contain" src={project.imagen} alt={project.nombre} />
+        <img className="h-full object-contain" src={
+          project.imagen ? {
+            1: p1,
+            2: p2,
+          }[project.imagen] : p1
+        } alt={project.nombre} />
       </div>
     </div>
   );

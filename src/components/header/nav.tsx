@@ -4,20 +4,21 @@ import Social from "./social";
 
 interface NavProps {
   open: boolean;
+  toggleOpen: () => void;
 }
 
 const navLinks = [
   {
-    to: "#",
+    to: "#Inicio",
     label: "Inicio",
   },
   {
-    to: "#",
+    to: "#proyectos",
     label: "Proyectos",
   },
 ];
 
-const Nav: React.FC<NavProps> = ({ open }) => {
+const Nav: React.FC<NavProps> = ({ open, toggleOpen }) => {
   return (
     <nav
       className={`
@@ -43,7 +44,7 @@ const Nav: React.FC<NavProps> = ({ open }) => {
       >
         {navLinks.map((link) => (
           <li key={link.label}>
-            <NavLink to={link.to} label={link.label} />
+            <NavLink to={link.to} label={link.label} toggleOpen={toggleOpen} />
           </li>
         ))}
         <li>

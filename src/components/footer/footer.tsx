@@ -5,7 +5,7 @@ import Social from "../header/social";
 
 const Footer = () => {
   return (
-    <footer className="footer items-center bg-neutral p-8 text-lightWhite">
+    <footer className="footer items-center bg-bgsection border-t border-invalid/30 p-8 text-lightWhite">
       <div className="grid-flow-col items-center">
         <img src={Logo} alt="Logo" className="w-10 h-10" />
         <p>Sergio Fernández Fernández</p>

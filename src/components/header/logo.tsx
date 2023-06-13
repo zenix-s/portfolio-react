@@ -1,13 +1,18 @@
 import logo from "../../assets/logonobg.svg";
 
 const Logo = () => {
+
+  const onClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div
       className="
       z-50
     "
     >
-      <a
+      <button
         className={`
         duration-400
         text-3xl
@@ -19,10 +24,10 @@ const Logo = () => {
         tooltip-bottom
         `}
         data-tip="Inicio"
-        href="#home"
+        onClick={onClick}
       >
         <img src={logo} alt="logo" className="h-12 w-12" />
-      </a>
+      </button>
     </div>
   );
 };
