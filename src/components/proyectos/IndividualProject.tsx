@@ -10,12 +10,14 @@ interface Props {
 
 const IdividualProject: React.FC<Props> = ({ project, reverse }) => {
   return (
-    <div className={`flex min-h-[500px] max-w-[1500px] w-full flex-col-reverse overflow-hidden text-invalid
+    <div
+      className={`flex min-h-[500px] w-full max-w-[1500px] flex-col-reverse overflow-hidden text-invalid
       ${reverse ? "md:flex-row-reverse" : "md:flex-row"}
     
-    `}>
+    `}
+    >
       <div className="flex w-full items-center p-12 md:p-4">
-        <div className="flex flex-col gap-4">
+        <div className="flex w-full flex-col p-4 gap-4">
           <h1 className="text-4xl font-bold">{project.nombre}</h1>
           <p>{project.descripcion}</p>
           <div>
@@ -32,22 +34,29 @@ const IdividualProject: React.FC<Props> = ({ project, reverse }) => {
           <div>
             <a
               href={project.href}
-              className="btn-primary btn gap-2"
+              className="flex items-center transition-all duration-500 ease-in-out gap-2 w-fit rounded-md border border-yellow/40 p-4  hover:border-yellow"
               target="_blank"
               rel="noreferrer"
             >
-              Visitar Proyecto <FiExternalLink />
+              <span>Visitar Proyecto</span>
+              <FiExternalLink />
             </a>
           </div>
         </div>
       </div>
       <div className="w-full">
-        <img className="h-full object-contain" src={
-          project.imagen ? {
-            1: p1,
-            2: p2,
-          }[project.imagen] : p1
-        } alt={project.nombre} />
+        <img
+          className="h-full object-contain"
+          src={
+            project.imagen
+              ? {
+                  1: p1,
+                  2: p2,
+                }[project.imagen]
+              : p1
+          }
+          alt={project.nombre}
+        />
       </div>
     </div>
   );

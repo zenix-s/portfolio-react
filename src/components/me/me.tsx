@@ -1,44 +1,8 @@
 import { useEffect, useState } from "react";
 import bg from "../../assets/img/bg.png";
+import Circle from "./Circle";
+import ButtonProjects from "./ButtonProjects";
 
-const Circle = ({
-  id,
-  circleLoading,
-  circleLoaded,
-}: {
-  id: number;
-  circleLoading: boolean;
-  circleLoaded: boolean;
-}) => {
-  return (
-    <div
-      className={`
-      absolute
-      right-0
-      top-64
-      aspect-square
-      -translate-y-1/2
-      translate-x-2/4
-      rounded-full
-      border
-      border-yellow
-      ${
-        circleLoading
-          ? {
-              1: "h-2/4",
-              2: "h-full",
-              3: "h-[150%]",
-              4: "h-[200%]",
-            }[id]
-          : "h-0"
-      }
-      ${circleLoaded ? "opacity-30" : "opacity-100"}
-      transition-all
-      duration-500
-    `}
-    />
-  );
-};
 
 const About = () => {
   const [circleLoading, setCircleLoading] = useState({
@@ -129,6 +93,9 @@ const About = () => {
             <Circle id={4} circleLoading={circleLoading[4].loading} circleLoaded={circleLoading[4].loaded} />
           </div>
         </div>
+      </div>
+      <div className="absolute bottom-10 ">
+        <ButtonProjects />
       </div>
       <div className="main-section-animation flex h-full w-full flex-col items-start justify-center gap-8 p-1 sm:px-28">
         <h1 className="flex flex-col items-start gap-1 text-6xl uppercase text-invalid md:flex-col md:gap-4 sm:text-7xl md:text-9xl">
